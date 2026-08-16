@@ -1,0 +1,66 @@
+name: fluttery_wings
+description: Premium AAA Tap to Fly infinite flying game with physics, shop, achievements & themes.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.5"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Core
+  cupertino_icons: ^1.0.8
+  equatable: ^2.0.7
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
+  # Game Engine
+  flame: 1.18.0
+  flame_audio: 2.10.0
+  # flame_parallax: ^1.0.1
+
+  # UI / Premium Effects
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  flutter_staggered_animations: ^1.1.1
+
+  # Services
+  google_mobile_ads: ^5.2.0
+  shared_preferences: ^2.3.2
+  package_info_plus: ^8.0.0
+  device_info_plus: ^10.1.0
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    # - assets/images/birds/
+    # - assets/images/themes/
+    - assets/images/ui/
+    # - assets/audio/
+    - assets/l10n/
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/ui/app_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/ui/app_icon.png"
+    background_color: "#0A0E21"
+    theme_color: "#6C5CE7"
